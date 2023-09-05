@@ -566,8 +566,9 @@ textarea.input {
   position: relative;
   z-index: 3;
   min-height: 100vh;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1916,7 +1917,7 @@ textarea.input {
   }
 
   .main-section__container {
-    padding-top: 3.125rem;
+    padding-top: 5rem;
   }
 
   .main-section__container {
@@ -2341,15 +2342,15 @@ textarea.input {
     }
 }
 
-@supports (padding-top: clamp( 3.125rem , 0.2036516854rem  +  14.606741573vw , 11.25rem )) {
+@supports (padding-top: clamp( 5rem , 2.7528089888rem  +  11.2359550562vw , 11.25rem )) {
     .main-section__container {
-      padding-top: clamp( 3.125rem , 0.2036516854rem  +  14.606741573vw , 11.25rem );
+      padding-top: clamp( 5rem , 2.7528089888rem  +  11.2359550562vw , 11.25rem );
     }
 }
 
-@supports not (padding-top: clamp( 3.125rem , 0.2036516854rem  +  14.606741573vw , 11.25rem )) {
+@supports not (padding-top: clamp( 5rem , 2.7528089888rem  +  11.2359550562vw , 11.25rem )) {
     .main-section__container {
-      padding-top: calc(3.125rem + 8.125 * (100vw - 20rem) / 55.625);
+      padding-top: calc(5rem + 6.25 * (100vw - 20rem) / 55.625);
     }
 }
 
