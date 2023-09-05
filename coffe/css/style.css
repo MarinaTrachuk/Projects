@@ -178,7 +178,7 @@ h6 {
   color: #1e1e1e;
   font-size: 1rem;
   font-weight: 700;
-  padding: 0.875rem 1.625rem;
+  padding: 0.875rem 1.5rem;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2926,6 +2926,7 @@ textarea.input {
   }
 
   .menu__link:hover {
+    text-decoration: underline;
     color: #f9c06a;
   }
 

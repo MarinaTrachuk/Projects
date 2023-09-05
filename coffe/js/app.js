@@ -501,6 +501,12 @@
                     form
                 }
             }));
+            let button = form.querySelector(".form__button");
+            let originalText = button.textContent;
+            button.textContent = "Successfully!";
+            setTimeout((() => {
+                button.textContent = originalText;
+            }), 2e3);
             setTimeout((() => {
                 if (flsModules.popup) {
                     const popup = form.dataset.popupMessage;
