@@ -669,6 +669,11 @@ textarea.input {
   padding-bottom: 39%;
 }
 
+.discover__image-ibg img {
+  -o-object-position: left;
+     object-position: left;
+}
+
 .enjoy__body {
   -webkit-transform: translate(0, 50%);
       -ms-transform: translate(0, 50%);
@@ -782,10 +787,10 @@ textarea.input {
 }
 
 .cards-enjoy__image-ibg img {
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .cards-enjoy__body {
@@ -1459,7 +1464,7 @@ textarea.input {
 
 @media (min-width: 47.99875em) {
   .no-webp .chance__content._watcher-view::before{
-    background: url("../img/home/chance/02.png") 100% 0/contain no-repeat; }
+    background: url("../img/home/chance/02.png") 100% 100%/contain no-repeat; }
   .chance__content._watcher-view::before {
     opacity: 0;
     -webkit-animation: slide-in-right 1s ease forwards;
@@ -1468,8 +1473,8 @@ textarea.input {
     position: absolute;
     z-index: 5;
     right: 0;
-    top: 0;
-    width: 100%;
+    bottom: 0;
+    max-width: 100%;
     /* 533/1180 */
     height: 100%;
     /* 574/1180 */
@@ -1546,6 +1551,12 @@ textarea.input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 47.99875em) and (min-width: 75.625em) {
+  .chance__content._watcher-view::before {
+    min-width: 34.375rem;
   }
 }
 
@@ -2841,6 +2852,26 @@ textarea.input {
 }
 }
 
+@media (min-width: 47.99875em) and (min-width: 56.25em) and (max-width: 75.625em) {
+@supports (min-width: clamp( 25rem , -2.2177419355rem  +  48.3870967742vw , 34.375rem )) {
+    .chance__content._watcher-view::before {
+      min-width: clamp( 25rem , -2.2177419355rem  +  48.3870967742vw , 34.375rem );
+    }
+}
+
+@supports not (min-width: clamp( 25rem , -2.2177419355rem  +  48.3870967742vw , 34.375rem )) {
+    .chance__content._watcher-view::before {
+      min-width: calc(25rem + 9.375 * (100vw - 56.25rem) / 19.375);
+    }
+}
+}
+
+@media (min-width: 47.99875em) and (max-width: 56.25em) {
+  .chance__content._watcher-view::before {
+    min-width: 25rem;
+  }
+}
+
 @media (min-width: 48em) and (max-width: 75em) {
 @supports (padding-bottom: clamp( 1.875rem , -1.4583333333rem  +  6.9444444444vw , 3.75rem )) {
     .feedback__slider {
@@ -2946,9 +2977,9 @@ textarea.input {
   }
 
   .cards-enjoy__image-ibg img:hover {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   .cards-enjoy__body:hover {
@@ -2978,7 +3009,7 @@ textarea.input {
 
 @media (min-width: 47.99875em){
 
-  .webp .chance__content._watcher-view::before{ background: url(../img/home/chance/02.webp) 100% 0/contain no-repeat; }
+  .webp .chance__content._watcher-view::before{ background: url(../img/home/chance/02.webp) 100% 100%/contain no-repeat; }
 }
 
 @media (min-width: 71.25em){
