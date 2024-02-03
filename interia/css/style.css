@@ -637,6 +637,7 @@ body {
   padding-left: 0.3125rem;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  position: relative;
 }
 
 .hero__play-button::after {
@@ -644,7 +645,6 @@ body {
   position: absolute;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-  z-index: -1;
   top: 0;
   bottom: 0;
   right: 0;
@@ -700,6 +700,38 @@ body {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hero__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  left: 0;
+  bottom: 3.125rem;
+  width: 100%;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.3125rem;
+  cursor: pointer;
+}
+
+.hero__pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 3.75rem;
+          flex: 0 0 3.75rem;
+  height: 0.625rem;
+  background-color: #6d7d7d;
+  border-radius: 0.3125rem;
+}
+
+.hero__pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 
 .swiper {
