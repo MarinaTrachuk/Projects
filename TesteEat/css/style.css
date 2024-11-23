@@ -4500,4 +4500,9 @@ h6 {
     color: #e1b168;
     text-decoration: underline
   }
+  .form-reservation__button:hover {
+    background-color: #e1b168;
+    border-color: #e1b168;
+    color: #292e36
+  }
 }
