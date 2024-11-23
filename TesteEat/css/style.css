@@ -2894,7 +2894,7 @@ h6 {
 }
 @media (min-width:48.06125em)and (min-width:86.875em) {
   .header._header-scroll {
-    top: -16.25rem
+    top: -15rem
   }
 }
 @media (min-width:86.875em) {
@@ -4035,12 +4035,12 @@ h6 {
 }
 @media (min-width:48.06125em)and (min-width:20em)and (max-width:86.875em) {
   .header._header-scroll {
-    top: clamp(-16.25rem ,-3.2593457944rem + -14.953271028vw ,-6.25rem)
+    top: clamp(-15rem ,-5.2570093458rem + -11.214953271vw ,-7.5rem)
   }
 }
 @media (min-width:48.06125em)and (max-width:20em) {
   .header._header-scroll {
-    top: -6.25rem
+    top: -7.5rem
   }
 }
 @media (min-width:20em)and (max-width:86.875em) {
