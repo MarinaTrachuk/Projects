@@ -460,13 +460,8 @@ h6 {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 50
-}
-.header._header-scroll {
-  position: fixed;
-  width: 100%;
-  background-color: #292e36;
-  transition: all .5s
+  z-index: 50;
+  transition: top .8s linear
 }
 .header__logo {
   aspect-ratio: 378/188
@@ -2887,6 +2882,16 @@ h6 {
 .swiper-button-lock {
   display: none!important
 }
+@media (min-width:48.06125em) {
+  .header._header-scroll {
+    transition: top .8s linear,background-color .8s ease,-webkit-transform .8s ease;
+    transition: top .8s linear,transform .8s ease,background-color .8s ease;
+    transition: top .8s linear,transform .8s ease,background-color .8s ease,-webkit-transform .8s ease;
+    position: fixed;
+    width: 100%;
+    background-color: #292e36
+  }
+}
 @media (min-width:48.06125em)and (min-width:86.875em) {
   .header._header-scroll {
     top: -16.25rem
@@ -3825,10 +3830,6 @@ h6 {
     bottom: calc(50% - .0625rem);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
-  }
-  .header._header-show {
-    transition: top .5s ease 0s;
-    top: 0
   }
   .header__container {
     padding-top: 1.25rem
