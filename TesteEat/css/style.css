@@ -2963,6 +2963,9 @@ h6 {
   .subscribe-footer__input {
     min-height: 4.1875rem
   }
+  .subscribe-footer__input {
+    font-size: 1.375rem
+  }
   .subscribe-footer__button {
     padding-left: 2.5rem
   }
@@ -2971,6 +2974,9 @@ h6 {
   }
   .subscribe-footer__button {
     min-height: 4.1875rem
+  }
+  .subscribe-footer__button {
+    font-size: 1.375rem
   }
   .bottom-footer__copy {
     font-size: 1.25rem
@@ -3345,6 +3351,9 @@ h6 {
   .subscribe-footer__input {
     min-height: 3.125rem
   }
+  .subscribe-footer__input {
+    font-size: 1.125rem
+  }
   .subscribe-footer__button {
     padding-left: .625rem
   }
@@ -3353,6 +3362,9 @@ h6 {
   }
   .subscribe-footer__button {
     min-height: 3.125rem
+  }
+  .subscribe-footer__button {
+    font-size: 1.25rem
   }
   .bottom-footer__copy {
     font-size: .875rem
@@ -3949,6 +3961,11 @@ h6 {
     cursor: default
   }
 }
+@media (max-width:47.99875em)and (max-width:20em) {
+  .header-footer__logo {
+    max-width: 12.5rem
+  }
+}
 @media (max-width:37.5em) {
   .body-footer {
     grid-template-columns: auto
@@ -4065,6 +4082,9 @@ h6 {
   .subscribe-footer__input {
     min-height: clamp(3.125rem ,2.8072429907rem + 1.5887850467vw ,4.1875rem)
   }
+  .subscribe-footer__input {
+    font-size: clamp(1.125rem ,1.0502336449rem + .3738317757vw ,1.375rem)
+  }
   .subscribe-footer__button {
     padding-left: clamp(.625rem ,.0642523364rem + 2.8037383178vw ,2.5rem)
   }
@@ -4073,6 +4093,9 @@ h6 {
   }
   .subscribe-footer__button {
     min-height: clamp(3.125rem ,2.8072429907rem + 1.5887850467vw ,4.1875rem)
+  }
+  .subscribe-footer__button {
+    font-size: clamp(1.25rem ,1.2126168224rem + .1869158879vw ,1.375rem)
   }
   .bottom-footer__copy {
     font-size: clamp(.875rem ,.7628504673rem + .5607476636vw ,1.25rem)
@@ -4405,6 +4428,16 @@ h6 {
   }
   .input::placeholder {
     font-size: clamp(1rem ,.8878504673rem + .5607476636vw ,1.375rem)
+  }
+}
+@media (max-width:47.99875em)and (min-width:86.875em) {
+  .header-footer__logo {
+    max-width: 23.625rem
+  }
+}
+@media (max-width:47.99875em)and (min-width:20em)and (max-width:86.875em) {
+  .header-footer__logo {
+    max-width: clamp(12.5rem ,9.1728971963rem + 16.6355140187vw ,23.625rem)
   }
 }
 @media (any-hover:hover) {
