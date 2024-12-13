@@ -244,10 +244,11 @@ h6 {
   object-fit: contain
 }
 .header {
-  position: sticky;
-  z-index: 50;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
+  z-index: 50;
   background-color: #fff
 }
 .header__container {
@@ -388,49 +389,40 @@ h6 {
   margin-bottom: .9375rem
 }
 .hero {
-  position: relative;
-  min-height: calc(100vh - 106px);
-  transition: all .3s
-}
-.hero__hero-bg {
-  overflow: hidden;
-  max-height: calc(100vh - 106px)
-}
-.hero__hero-bg img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: 60%;
-  object-position: 60%;
-  will-change: transform
+  position: relative
 }
 .hero__container {
   position: relative;
   z-index: 3;
-  min-height: calc(100vh - 6.625rem);
+  min-height: 100vh;
   display: flex;
-  align-items: center;
-  opacity: 0;
-  -webkit-transform: translate(0,20%);
-  transform: translate(0,20%)
-}
-.hero__container._watcher-view {
-  -webkit-transform: translate(0,0);
-  transform: translate(0,0);
-  transition: opacity 1s .2s,-webkit-transform 1s .2s;
-  transition: transform 1s .2s,opacity 1s .2s;
-  transition: transform 1s .2s,opacity 1s .2s,-webkit-transform 1s .2s;
-  opacity: 1
+  align-items: center
 }
 .hero__body {
   display: flex;
   align-items: start;
   flex-direction: column;
-  max-width: 37.1875rem
+  max-width: 37.1875rem;
+  opacity: 0;
+  -webkit-transform: translate(0,20%);
+  transform: translate(0,20%)
+}
+.hero__body._watcher-view {
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  transition: opacity 1s .5s,-webkit-transform 1s .5s;
+  transition: transform 1s .5s,opacity 1s .5s;
+  transition: transform 1s .5s,opacity 1s .5s,-webkit-transform 1s .5s;
+  opacity: 1
+}
+.hero__hero-bg img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0
 }
 .services {
   opacity: 0;
@@ -1121,14 +1113,14 @@ h6 {
   .page__contact {
     padding-bottom: 4.375rem
   }
+  .hero__container {
+    padding-top: 11.25rem
+  }
+  .hero__container {
+    padding-bottom: 11.25rem
+  }
   .hero__hero-bg img {
     border-bottom-left-radius: 15.625rem
-  }
-  .hero__body {
-    padding-top: 11.75rem
-  }
-  .hero__body {
-    padding-bottom: 12.5rem
   }
   .item-services {
     border-radius: 3.75rem
@@ -1344,14 +1336,14 @@ h6 {
   .page__contact {
     padding-bottom: 1.25rem
   }
+  .hero__container {
+    padding-top: 5rem
+  }
+  .hero__container {
+    padding-bottom: 5rem
+  }
   .hero__hero-bg img {
     border-bottom-left-radius: 1.875rem
-  }
-  .hero__body {
-    padding-top: 3.125rem
-  }
-  .hero__body {
-    padding-bottom: 3.125rem
   }
   .item-services {
     border-radius: 1.875rem
@@ -1557,9 +1549,6 @@ h6 {
   .menu__link {
     font-size: 1.875rem
   }
-  .hero {
-    min-height: calc(100vh - 65px)
-  }
   .item-services {
     padding-top: .625rem
   }
@@ -1611,15 +1600,6 @@ h6 {
 @media (max-width:29.99875em) {
   .button--hero {
     width: 100%
-  }
-  .hero::after {
-    content: "";
-    background-color: rgba(255,255,255,.5);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0
   }
   .designs__button {
     width: 100%
@@ -1730,14 +1710,14 @@ h6 {
   .page__contact {
     padding-bottom: clamp(1.25rem ,.1510989011rem + 5.4945054945vw ,4.375rem)
   }
+  .hero__container {
+    padding-top: clamp(5rem ,2.8021978022rem + 10.989010989vw ,11.25rem)
+  }
+  .hero__container {
+    padding-bottom: clamp(5rem ,2.8021978022rem + 10.989010989vw ,11.25rem)
+  }
   .hero__hero-bg img {
     border-bottom-left-radius: clamp(1.875rem ,-2.9601648352rem + 24.1758241758vw ,15.625rem)
-  }
-  .hero__body {
-    padding-top: clamp(3.125rem ,.092032967rem + 15.1648351648vw ,11.75rem)
-  }
-  .hero__body {
-    padding-bottom: clamp(3.125rem ,-.1717032967rem + 16.4835164835vw ,12.5rem)
   }
   .item-services {
     border-radius: clamp(1.875rem ,1.2156593407rem + 3.2967032967vw ,3.75rem)
