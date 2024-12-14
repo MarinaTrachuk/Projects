@@ -118,6 +118,10 @@ h6 {
   -ms-scroll-chaining: none;
   overscroll-behavior: none
 }
+.loaded body {
+  opacity: 1;
+  transition: opacity .4s
+}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -168,6 +172,9 @@ h6 {
 .button::before {
   color: #cda274;
   transition: all .5s
+}
+.button--light {
+  border: .125rem solid #cda274
 }
 .button--fw {
   width: 100%
@@ -389,7 +396,8 @@ h6 {
   margin-bottom: .9375rem
 }
 .hero {
-  position: relative
+  position: relative;
+  transition: all .3s
 }
 .hero__container {
   position: relative;
@@ -407,7 +415,7 @@ h6 {
   -webkit-transform: translate(0,20%);
   transform: translate(0,20%)
 }
-.hero__body._watcher-view {
+.loaded .hero__body {
   -webkit-transform: translate(0,0);
   transform: translate(0,0);
   transition: opacity 1s .5s,-webkit-transform 1s .5s;
@@ -422,7 +430,9 @@ h6 {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0
+  left: 0;
+  -o-object-position: 60%;
+  object-position: 60%
 }
 .services {
   opacity: 0;
@@ -698,8 +708,6 @@ h6 {
   overflow: hidden
 }
 .brands__wrapper {
-  border-radius: 1.875rem;
-  border: .0625rem solid #e7e7e7;
   --gap: 5.625rem;
   position: relative;
   display: flex;
@@ -988,12 +996,6 @@ h6 {
   align-items: center;
   justify-content: center
 }
-.contact__button {
-  background-color: #cda274
-}
-.contact__button::before {
-  color: #292f36
-}
 @media (min-width:37.5em) {
   .body-footer__column:nth-child(1) {
     flex: 1 1 20.625rem
@@ -1087,7 +1089,7 @@ h6 {
     padding-top: 4.375rem
   }
   .page__brands {
-    padding-bottom: 4.375rem
+    padding-bottom: 2.5rem
   }
   .page__projects {
     padding-top: 4.375rem
@@ -1549,6 +1551,15 @@ h6 {
   .menu__link {
     font-size: 1.875rem
   }
+  .hero::after {
+    content: "";
+    background-color: rgba(255,255,255,.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+  }
   .item-services {
     padding-top: .625rem
   }
@@ -1684,7 +1695,7 @@ h6 {
     padding-top: clamp(1.25rem ,.1510989011rem + 5.4945054945vw ,4.375rem)
   }
   .page__brands {
-    padding-bottom: clamp(1.25rem ,.1510989011rem + 5.4945054945vw ,4.375rem)
+    padding-bottom: clamp(1.25rem ,.8104395604rem + 2.1978021978vw ,2.5rem)
   }
   .page__projects {
     padding-top: clamp(1.25rem ,.1510989011rem + 5.4945054945vw ,4.375rem)
