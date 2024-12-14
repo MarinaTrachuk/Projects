@@ -333,11 +333,11 @@ h6 {
   font-size: 1rem;
   transition: all .3s
 }
+.spollers-footer__item {
+  list-style: none
+}
 .spollers-footer__title {
-  list-style: none!important;
-  -webkit-padding-start: 0;
-  -moz-padding-start: 0;
-  padding-left: 0;
+  list-style: none;
   color: #292f36;
   font-family: "DM Serif Display";
   font-size: 1.5625rem;
@@ -349,7 +349,8 @@ h6 {
 }
 .spollers-footer__list {
   display: grid;
-  gap: 1.875rem
+  gap: 1.875rem;
+  list-style: none
 }
 .spollers-footer__link {
   transition: color .3s
