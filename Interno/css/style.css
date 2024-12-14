@@ -333,11 +333,11 @@ h6 {
   font-size: 1rem;
   transition: all .3s
 }
-.spollers-footer__title .spollers-footer__item {
-  list-style: none!important
-}
 .spollers-footer__title {
   list-style: none!important;
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  padding-left: 0;
   color: #292f36;
   font-family: "DM Serif Display";
   font-size: 1.5625rem;
