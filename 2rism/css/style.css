@@ -904,7 +904,8 @@ h6 {
   color: #161414;
   font-weight: 600;
   line-height: 1.5;
-  text-transform: capitalize
+  text-transform: capitalize;
+  overflow: hidden
 }
 .title.title--small {
   font-size: 1rem;
@@ -919,11 +920,12 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: .625rem
+  gap: .625rem;
+  overflow: hidden
 }
 .section-header._watcher-view {
-  -webkit-animation: slideInUp 2s both;
-  animation: slideInUp 2s both
+  -webkit-animation: slideInUp 1s cubic-bezier(.25,.46,.45,.94) forwards;
+  animation: slideInUp 1s cubic-bezier(.25,.46,.45,.94) forwards
 }
 .section-header--column {
   align-items: flex-start;
@@ -1192,22 +1194,26 @@ h6 {
 }
 @-webkit-keyframes slideInUp {
   0% {
+    opacity: 0;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     visibility: visible
   }
   100% {
+    opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0)
   }
 }
 @keyframes slideInUp {
   0% {
+    opacity: 0;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     visibility: visible
   }
   100% {
+    opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0)
   }
@@ -1219,8 +1225,8 @@ h6 {
     transform: translateY(20px) rotateY(-10deg) scale(.9)
   }
   50% {
-    -webkit-transform: translateY(-10px) rotateY(5deg) scale(1.05);
-    transform: translateY(-10px) rotateY(5deg) scale(1.05)
+    -webkit-transform: translateY(-10px) rotateY(5deg) scale(1.03);
+    transform: translateY(-10px) rotateY(5deg) scale(1.03)
   }
   100% {
     opacity: 1;
@@ -1235,8 +1241,8 @@ h6 {
     transform: translateY(20px) rotateY(-10deg) scale(.9)
   }
   50% {
-    -webkit-transform: translateY(-10px) rotateY(5deg) scale(1.05);
-    transform: translateY(-10px) rotateY(5deg) scale(1.05)
+    -webkit-transform: translateY(-10px) rotateY(5deg) scale(1.03);
+    transform: translateY(-10px) rotateY(5deg) scale(1.03)
   }
   100% {
     opacity: 1;
@@ -1262,8 +1268,8 @@ h6 {
   z-index: 3
 }
 .loaded .body-header {
-  -webkit-animation: slideInUp 2s both;
-  animation: slideInUp 2s both
+  -webkit-animation: slideInUp 1.5s cubic-bezier(.25,.46,.45,.94) forwards;
+  animation: slideInUp 1.5s cubic-bezier(.25,.46,.45,.94) forwards
 }
 .body-header__container {
   min-height: calc(100svh - 6.875rem);
@@ -1365,8 +1371,8 @@ h6 {
   overflow: hidden
 }
 .popular-destinations__title._watcher-view {
-  -webkit-animation: slideInUp 2s both;
-  animation: slideInUp 2s both
+  -webkit-animation: slideInUp 1s cubic-bezier(.25,.46,.45,.94) forwards;
+  animation: slideInUp 1s cubic-bezier(.25,.46,.45,.94) forwards
 }
 .popular-destinations__items {
   display: grid;
@@ -1394,8 +1400,8 @@ h6 {
   line-height: 1.4
 }
 .hotels-restaurants__title._watcher-view {
-  -webkit-animation: slideInUp 2s both;
-  animation: slideInUp 2s both
+  -webkit-animation: slideInUp 1s cubic-bezier(.25,.46,.45,.94) forwards;
+  animation: slideInUp 1s cubic-bezier(.25,.46,.45,.94) forwards
 }
 .hotels-restaurants__items {
   display: grid;
