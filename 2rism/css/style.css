@@ -906,12 +906,12 @@ h6 {
   line-height: 1.5;
   text-transform: capitalize
 }
-.title--small {
+.title.title--small {
   font-size: 1rem;
   font-weight: 500;
   transition: all .3s
 }
-.title--medium {
+.title.title--medium {
   font-weight: 600;
   line-height: 1.3
 }
@@ -1607,7 +1607,7 @@ h6 {
   .title {
     font-size: 2rem
   }
-  .title--medium {
+  .title.title--medium {
     font-size: 1.5rem
   }
   .section-header:not(:last-child):not(.section-header--column) {
@@ -1758,7 +1758,7 @@ h6 {
   .title {
     font-size: 1.25rem
   }
-  .title--medium {
+  .title.title--medium {
     font-size: 1.125rem
   }
   .section-header:not(:last-child):not(.section-header--column) {
@@ -2063,7 +2063,7 @@ h6 {
   .title {
     font-size: clamp(1.25rem ,1.0257009346rem + 1.1214953271vw ,2rem)
   }
-  .title--medium {
+  .title.title--medium {
     font-size: clamp(1.125rem ,1.0128504673rem + .5607476636vw ,1.5rem)
   }
   .section-header:not(:last-child):not(.section-header--column) {
@@ -2180,7 +2180,7 @@ h6 {
   .form-mail__button:hover {
     background-color: #5243c2
   }
-  .title--small:hover {
+  .title.title--small:hover {
     color: #5243c2
   }
   .section-header__button:hover {
